@@ -1,700 +1,849 @@
 <!DOCTYPE html>
 <html lang="id" data-theme="dark">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Natasya Putri Pratama — UI/UX Designer | Portfolio</title>
-<meta name="description" content="Portofolio Natasya Putri Pratama, UI/UX Designer di Jakarta. Lihat case study Lumina, Kirana, dan SehatKu — desain produk digital yang bersih, ergonomic, dan terbukti." />
-<meta name="author" content="Natasya Putri Pratama" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Natasya Putri Pratama — UI/UX Designer | Portfolio</title>
+  <meta name="description"
+    content="Portofolio Natasya Putri Pratama, UI/UX Designer di Jakarta. Lihat case study Lumina, Kirana, dan SehatKu — desain produk digital yang bersih, ergonomic, dan terbukti." />
+  <meta name="author" content="Natasya Putri Pratama" />
 
-<!-- Open Graph -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Natasya Putri Pratama — UI/UX Designer" />
-<meta property="og:description" content="Desain yang terasa alami, bukan sekadar cantik." />
-<meta property="og:locale" content="id_ID" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Natasya Putri Pratama — UI/UX Designer" />
+  <meta property="og:description" content="Desain yang terasa alami, bukan sekadar cantik." />
+  <meta property="og:locale" content="id_ID" />
 
-<!-- Favicon (inline SVG) -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='26' fill='%23b69cff'/%3E%3Ctext x='50' y='68' font-family='Inter,sans-serif' font-size='46' font-weight='700' fill='%23140f1f' text-anchor='middle'%3ENP%3C/text%3E%3C/svg%3E" />
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='26' fill='%23b69cff'/%3E%3Ctext x='50' y='68' font-family='Inter,sans-serif' font-size='46' font-weight='700' fill='%23140f1f' text-anchor='middle'%3ENP%3C/text%3E%3C/svg%3E" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-<!-- ═══════════ ATMOSPHERE ═══════════ -->
-<div class="grain" aria-hidden="true"></div>
-<div class="mesh" aria-hidden="true">
-  <span class="blob blob--1"></span>
-  <span class="blob blob--2"></span>
-  <span class="blob blob--3"></span>
-</div>
-<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
-<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <!-- ═══════════ ATMOSPHERE ═══════════ -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="mesh" aria-hidden="true">
+    <span class="blob blob--1"></span>
+    <span class="blob blob--2"></span>
+    <span class="blob blob--3"></span>
+  </div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
-<a href="#main" class="skip-link">Lompat ke konten utama</a>
+  <a href="#main" class="skip-link">Lompat ke konten utama</a>
 
-<!-- ═══════════ HEADER ═══════════ -->
-<header class="header" id="header">
-  <div class="container header__inner">
-    <a href="#home" class="brand" id="brandLink" aria-label="Natasya Putri Pratama — Beranda">
-      <span class="brand__mark">NP</span>
-      <span class="brand__text">natasya<span class="brand__dot">.</span></span>
-    </a>
+  <!-- ═══════════ HEADER ═══════════ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="brand" id="brandLink" aria-label="Natasya Putri Pratama — Beranda">
+        <span class="brand__mark">NP</span>
+        <span class="brand__text">natasya<span class="brand__dot">.</span></span>
+      </a>
 
-    <nav class="nav" id="nav" aria-label="Navigasi utama">
-      <ul class="nav__list">
-        <li><a href="#works" class="nav__link">Works</a></li>
-        <li><a href="#about" class="nav__link">About</a></li>
-        <li><a href="#skills" class="nav__link">Skills</a></li>
-        <li><a href="#contact" class="nav__link">Contact</a></li>
-      </ul>
-      <div class="nav__cta">
-        <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema terang / gelap" title="Ganti tema">
-          <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"/>
+      <nav class="nav" id="nav" aria-label="Navigasi utama">
+        <ul class="nav__list">
+          <li><a href="#works" class="nav__link">Works</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__cta">
+          <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema terang / gelap" title="Ganti tema">
+            <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+              stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" />
+              <path
+                d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7" />
+            </svg>
+            <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+              stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7Z" />
+            </svg>
+          </button>
+          <a href="#contact" class="btn btn--sm btn--primary">Let's Talk</a>
+        </div>
+      </nav>
+
+      <div class="header__mobile">
+        <button class="theme-toggle" id="themeToggleMobile" aria-label="Ganti tema terang / gelap">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2" />
+            <path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22" />
           </svg>
-          <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7Z"/>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7Z" />
           </svg>
         </button>
-        <a href="#contact" class="btn btn--sm btn--primary">Let's Talk</a>
-      </div>
-    </nav>
-
-    <div class="header__mobile">
-      <button class="theme-toggle" id="themeToggleMobile" aria-label="Ganti tema terang / gelap">
-        <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22"/></svg>
-        <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7Z"/></svg>
-      </button>
-      <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="nav">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-</header>
-<div class="nav-backdrop" id="navBackdrop"></div>
-
-<main id="main">
-
-<!-- ═══════════ HERO ═══════════ -->
-<section class="hero" id="home">
-  <div class="container hero__inner">
-    <div class="hero__content">
-      <div class="badge reveal" data-reveal>
-        <span class="badge__pulse"></span>
-        Available untuk freelance & full-time · Jakarta / Remote
-      </div>
-
-      <h1 class="hero__title reveal" data-reveal data-delay="1">
-        Desain yang terasa
-        <span class="rotator" id="rotator" aria-live="polite">
-          <span class="rotator__word is-active">alami</span>
-        </span>,
-        <em class="hero__em">bukan sekadar cantik.</em>
-      </h1>
-
-      <p class="hero__sub reveal" data-reveal data-delay="2">
-        Saya <strong>Natasya Putri Pratama</strong>, UI/UX Designer yang mengubah
-        kebutuhan pengguna yang rumit menjadi pengalaman digital yang
-        <strong>sederhana, cepat, dan menyenangkan</strong> untuk digunakan.
-      </p>
-
-      <div class="hero__actions reveal" data-reveal data-delay="3">
-        <a href="#works" class="btn btn--primary" id="ctaViewWork">
-          Lihat Karyawan
-          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="#contact" class="btn btn--ghost">Hubungi Saya</a>
-      </div>
-
-      <ul class="hero__stats reveal" data-reveal data-delay="4">
-        <li><strong class="counter" data-target="4" data-suffix="+">0</strong><span>Tahun pengalaman</span></li>
-        <li><strong class="counter" data-target="20" data-suffix="+">0</strong><span>Project selesai</span></li>
-        <li><strong class="counter" data-target="1500" data-suffix="+">0</strong><span>Pengguna diuji</span></li>
-      </ul>
-    </div>
-
-    <!-- Hero visual: CSS-crafted UI mockup -->
-    <div class="hero__visual reveal" data-reveal data-delay="2" aria-hidden="true">
-      <div class="mock-phone">
-        <div class="mock-phone__notch"></div>
-        <div class="mock-phone__screen">
-          <div class="mp-top">
-            <span class="mp-hello">Halo, Nata 👋</span>
-            <span class="mp-avatar">N</span>
-          </div>
-          <div class="mp-card">
-            <span class="mp-card__label">Total progres desain</span>
-            <span class="mp-card__value">87%</span>
-            <div class="mp-card__bars"><i style="--w:42%"></i><i style="--w:68%"></i><i style="--w:90%"></i><i style="--w:58%"></i></div>
-          </div>
-          <div class="mp-row"><span class="mp-chip mp-chip--v">Design System</span><span class="mp-chip">Research</span></div>
-          <div class="mp-row"><span class="mp-chip">UI Kit</span><span class="mp-chip mp-chip--p">Prototype</span></div>
-          <div class="mp-list">
-            <div class="mp-item"><span class="mp-dot mp-dot--1"></span><span class="mp-line"></span></div>
-            <div class="mp-item"><span class="mp-dot mp-dot--2"></span><span class="mp-line"></span></div>
-            <div class="mp-item"><span class="mp-dot mp-dot--3"></span><span class="mp-line"></span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="float-card float-card--a">
-        <span class="float-card__ico">✦</span>
-        <div><strong>Design System</strong><small>48 komponen reusable</small></div>
-      </div>
-      <div class="float-card float-card--b">
-        <span class="float-card__ico float-card__ico--mint">↑</span>
-        <div><strong>-38% drop-off</strong><small>Transfer flow · Lumina</small></div>
-      </div>
-      <div class="float-badge">Figma · Research · UI</div>
-    </div>
-  </div>
-
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee__track" id="marqueeTrack"></div>
-  </div>
-</section>
-
-<!-- ═══════════ ABOUT ═══════════ -->
-<section class="section" id="about">
-  <div class="container">
-    <header class="section__head reveal" data-reveal>
-      <span class="eyebrow">01 — About</span>
-      <h2 class="section__title">Sedikit tentang <span class="grad">saya</span></h2>
-    </header>
-
-    <div class="about__grid">
-      <div class="about__media reveal" data-reveal>
-        <div class="portrait">
-          <div class="portrait__halo"></div>
-          <div class="portrait__figure">
-            <span class="portrait__initials">NP</span>
-          </div>
-          <div class="portrait__tag portrait__tag--1">Empathy first</div>
-          <div class="portrait__tag portrait__tag--2">Data-driven</div>
-          <div class="portrait__tag portrait__tag--3">Pixel-perfect</div>
-        </div>
-        <div class="about__meta">
-          <div><span>Based in</span><strong>Jakarta, Indonesia</strong></div>
-          <div><span>Bahasa</span><strong>Bahasa · English</strong></div>
-          <div><span>Status</span><strong class="ok">Open to opportunities</strong></div>
-        </div>
-      </div>
-
-      <div class="about__text">
-        <p class="lead reveal" data-reveal>
-          Perjalanan saya di dunia desain dimulai saat kuliah Teknik Informatika,
-          di mana saya menemukan bahwa teknologi paling berharga adalah teknologi
-          yang justru felt good saat dipakai orang lain.
-        </p>
-        <p class="reveal" data-reveal data-delay="1">
-          Sejak itu saya fokus pada desain produk digital — memetakan masalah,
-          merancang antarmuka, sampai menguji hasilnya bersama pengguna nyata. Saya percaya
-          desain yang baik bukan tentang <em>estetika</em>, melainkan tentang bagaimana
-          seseorang merasa setelah memakai produk yang saya buat.
-        </p>
-
-        <blockquote class="quote reveal" data-reveal data-delay="2">
-          <p>"Desain yang baik dimulai dari <em>empathy</em>, bukan dari estetika."</p>
-        </blockquote>
-
-        <div class="pillars">
-          <article class="pillar reveal" data-reveal data-delay="1">
-            <span class="pillar__num">01</span>
-            <h3>Empathy dulu</h3>
-            <p>Saya mulai dengan memahami orang, bukan dengan menentukan warna.</p>
-          </article>
-          <article class="pillar reveal" data-reveal data-delay="2">
-            <span class="pillar__num">02</span>
-            <h3>Sederhana, tapi tidak asal</h3>
-            <p>Kompleks di belakang layar, sederhana di tangan pengguna.</p>
-          </article>
-          <article class="pillar reveal" data-reveal data-delay="3">
-            <span class="pillar__num">03</span>
-            <h3>Terbukti dengan data</h3>
-            <p>Setiap keputusan desain saya dukung riset atau pengujian usability.</p>
-          </article>
-        </div>
-
-        <p class="reveal" data-reveal data-delay="2">
-          Keahlian saya berpusat pada <strong>product design untuk mobile &amp; web app</strong> —
-          mulai dari user research, wireframing, prototyping, hingga UI design system
-          dan usability testing. Saya juga terbiasa bekerja erat dengan developer
-          agar desain benar-benar realized dengan baik di tahap implementasi.
-        </p>
+        <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
-  </div>
-</section>
+  </header>
+  <div class="nav-backdrop" id="navBackdrop"></div>
 
-<!-- ═══════════ WORKS ═══════════ -->
-<section class="section section--alt" id="works">
-  <div class="container">
-    <header class="section__head reveal" data-reveal>
-      <span class="eyebrow">02 — Selected Works</span>
-      <h2 class="section__title">Project <span class="grad">pilihan</span></h2>
-      <p class="section__lead">Tiga case study yang menunjukkan bagaimana saya bekerja —
-        dari masalah nyata, sampai angka yang berubah.</p>
-    </header>
+  <main id="main">
 
-    <div class="works">
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="badge reveal" data-reveal>
+            <span class="badge__pulse"></span>
+            Available untuk freelance & full-time · Jakarta / Remote
+          </div>
 
-      <!-- ===== PROJECT 1 ===== -->
-      <article class="work work--featured reveal" data-reveal>
-        <div class="work__visual work__visual--lumina">
-          <div class="mini-ui">
-            <div class="mini-ui__topbar"><i></i><i></i><i></i></div>
-            <div class="mini-ui__body">
-              <div class="mini-ui__side">
-                <span class="mu-nav is-on"></span><span class="mu-nav"></span><span class="mu-nav"></span><span class="mu-nav"></span>
+          <h1 class="hero__title reveal" data-reveal data-delay="1">
+            Desain yang terasa
+            <span class="rotator" id="rotator" aria-live="polite">
+              <span class="rotator__word is-active">alami</span>
+            </span>,
+            <em class="hero__em">bukan sekadar cantik.</em>
+          </h1>
+
+          <p class="hero__sub reveal" data-reveal data-delay="2">
+            Saya <strong>Natasya Putri Pratama</strong>, UI/UX Designer yang mengubah
+            kebutuhan pengguna yang rumit menjadi pengalaman digital yang
+            <strong>sederhana, cepat, dan menyenangkan</strong> untuk digunakan.
+          </p>
+
+          <div class="hero__actions reveal" data-reveal data-delay="3">
+            <a href="#works" class="btn btn--primary" id="ctaViewWork">
+              Lihat Karyawan
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost">Hubungi Saya</a>
+          </div>
+
+          <ul class="hero__stats reveal" data-reveal data-delay="4">
+            <li><strong class="counter" data-target="4" data-suffix="+">0</strong><span>Tahun pengalaman</span></li>
+            <li><strong class="counter" data-target="20" data-suffix="+">0</strong><span>Project selesai</span></li>
+            <li><strong class="counter" data-target="1500" data-suffix="+">0</strong><span>Pengguna diuji</span></li>
+          </ul>
+        </div>
+
+        <!-- Hero visual: CSS-crafted UI mockup -->
+        <div class="hero__visual reveal" data-reveal data-delay="2" aria-hidden="true">
+          <div class="mock-phone">
+            <div class="mock-phone__notch"></div>
+            <div class="mock-phone__screen">
+              <div class="mp-top">
+                <span class="mp-hello">Halo, Nata 👋</span>
+                <span class="mp-avatar">N</span>
               </div>
-              <div class="mini-ui__main">
-                <div class="mu-card mu-card--bal">
-                  <small>Saldo-total</small>
-                  <strong>Rp 12.480.000</strong>
-                  <span class="mu-chip-row"><i></i><i></i></span>
-                </div>
-                <div class="mu-grid2">
-                  <div class="mu-card mu-card--sm"><small>Transfer</small><span class="mu-ring"></span></div>
-                  <div class="mu-card mu-card--sm"><small>Tagihan</small><span class="mu-line-w"></span></div>
-                </div>
-                <div class="mu-list">
-                  <div class="mu-row"><i class="mu-av mu-av--1"></i><span class="mu-line-w"></span></div>
-                  <div class="mu-row"><i class="mu-av mu-av--2"></i><span class="mu-line-w"></span></div>
-                  <div class="mu-row"><i class="mu-av mu-av--3"></i><span class="mu-line-w"></span></div>
-                </div>
+              <div class="mp-card">
+                <span class="mp-card__label">Total progres desain</span>
+                <span class="mp-card__value">87%</span>
+                <div class="mp-card__bars"><i style="--w:42%"></i><i style="--w:68%"></i><i style="--w:90%"></i><i
+                    style="--w:58%"></i></div>
+              </div>
+              <div class="mp-row"><span class="mp-chip mp-chip--v">Design System</span><span
+                  class="mp-chip">Research</span></div>
+              <div class="mp-row"><span class="mp-chip">UI Kit</span><span class="mp-chip mp-chip--p">Prototype</span>
+              </div>
+              <div class="mp-list">
+                <div class="mp-item"><span class="mp-dot mp-dot--1"></span><span class="mp-line"></span></div>
+                <div class="mp-item"><span class="mp-dot mp-dot--2"></span><span class="mp-line"></span></div>
+                <div class="mp-item"><span class="mp-dot mp-dot--3"></span><span class="mp-line"></span></div>
               </div>
             </div>
           </div>
-          <div class="work__impact work__impact--hero">
-            <strong>-38%</strong><span>drop-off rate</span>
+
+          <div class="float-card float-card--a">
+            <span class="float-card__ico">✦</span>
+            <div><strong>Design System</strong><small>48 komponen reusable</small></div>
+          </div>
+          <div class="float-card float-card--b">
+            <span class="float-card__ico float-card__ico--mint">↑</span>
+            <div><strong>-38% drop-off</strong><small>Transfer flow · Lumina</small></div>
+          </div>
+          <div class="float-badge">Figma · Research · UI</div>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track" id="marqueeTrack"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════ ABOUT ═══════════ -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="eyebrow">01 — About</span>
+          <h2 class="section__title">Sedikit tentang <span class="grad">saya</span></h2>
+        </header>
+
+        <div class="about__grid">
+          <div class="about__media reveal" data-reveal>
+            <div class="portrait">
+              <div class="portrait__halo"></div>
+              <div class="portrait__figure">
+                <span class="portrait__initials">NP</span>
+              </div>
+              <div class="portrait__tag portrait__tag--1">Empathy first</div>
+              <div class="portrait__tag portrait__tag--2">Data-driven</div>
+              <div class="portrait__tag portrait__tag--3">Pixel-perfect</div>
+            </div>
+            <div class="about__meta">
+              <div><span>Based in</span><strong>Jakarta, Indonesia</strong></div>
+              <div><span>Bahasa</span><strong>Bahasa · English</strong></div>
+              <div><span>Status</span><strong class="ok">Open to opportunities</strong></div>
+            </div>
+          </div>
+
+          <div class="about__text">
+            <p class="lead reveal" data-reveal>
+              Perjalanan saya di dunia desain dimulai saat kuliah Teknik Informatika,
+              di mana saya menemukan bahwa teknologi paling berharga adalah teknologi
+              yang justru felt good saat dipakai orang lain.
+            </p>
+            <p class="reveal" data-reveal data-delay="1">
+              Sejak itu saya fokus pada desain produk digital — memetakan masalah,
+              merancang antarmuka, sampai menguji hasilnya bersama pengguna nyata. Saya percaya
+              desain yang baik bukan tentang <em>estetika</em>, melainkan tentang bagaimana
+              seseorang merasa setelah memakai produk yang saya buat.
+            </p>
+
+            <blockquote class="quote reveal" data-reveal data-delay="2">
+              <p>"Desain yang baik dimulai dari <em>empathy</em>, bukan dari estetika."</p>
+            </blockquote>
+
+            <div class="pillars">
+              <article class="pillar reveal" data-reveal data-delay="1">
+                <span class="pillar__num">01</span>
+                <h3>Empathy dulu</h3>
+                <p>Saya mulai dengan memahami orang, bukan dengan menentukan warna.</p>
+              </article>
+              <article class="pillar reveal" data-reveal data-delay="2">
+                <span class="pillar__num">02</span>
+                <h3>Sederhana, tapi tidak asal</h3>
+                <p>Kompleks di belakang layar, sederhana di tangan pengguna.</p>
+              </article>
+              <article class="pillar reveal" data-reveal data-delay="3">
+                <span class="pillar__num">03</span>
+                <h3>Terbukti dengan data</h3>
+                <p>Setiap keputusan desain saya dukung riset atau pengujian usability.</p>
+              </article>
+            </div>
+
+            <p class="reveal" data-reveal data-delay="2">
+              Keahlian saya berpusat pada <strong>product design untuk mobile &amp; web app</strong> —
+              mulai dari user research, wireframing, prototyping, hingga UI design system
+              dan usability testing. Saya juga terbiasa bekerja erat dengan developer
+              agar desain benar-benar realized dengan baik di tahap implementasi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ WORKS ═══════════ -->
+    <section class="section section--alt" id="works">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="eyebrow">02 — Selected Works</span>
+          <h2 class="section__title">Project <span class="grad">pilihan</span></h2>
+          <p class="section__lead">Tiga case study yang menunjukkan bagaimana saya bekerja —
+            dari masalah nyata, sampai angka yang berubah.</p>
+        </header>
+
+        <div class="works">
+
+          <!-- ===== PROJECT 1 ===== -->
+          <article class="work work--featured reveal" data-reveal>
+            <div class="work__visual work__visual--lumina">
+              <div class="mini-ui">
+                <div class="mini-ui__topbar"><i></i><i></i><i></i></div>
+                <div class="mini-ui__body">
+                  <div class="mini-ui__side">
+                    <span class="mu-nav is-on"></span><span class="mu-nav"></span><span class="mu-nav"></span><span
+                      class="mu-nav"></span>
+                  </div>
+                  <div class="mini-ui__main">
+                    <div class="mu-card mu-card--bal">
+                      <small>Saldo-total</small>
+                      <strong>Rp 12.480.000</strong>
+                      <span class="mu-chip-row"><i></i><i></i></span>
+                    </div>
+                    <div class="mu-grid2">
+                      <div class="mu-card mu-card--sm"><small>Transfer</small><span class="mu-ring"></span></div>
+                      <div class="mu-card mu-card--sm"><small>Tagihan</small><span class="mu-line-w"></span></div>
+                    </div>
+                    <div class="mu-list">
+                      <div class="mu-row"><i class="mu-av mu-av--1"></i><span class="mu-line-w"></span></div>
+                      <div class="mu-row"><i class="mu-av mu-av--2"></i><span class="mu-line-w"></span></div>
+                      <div class="mu-row"><i class="mu-av mu-av--3"></i><span class="mu-line-w"></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="work__impact work__impact--hero">
+                <strong>-38%</strong><span>drop-off rate</span>
+              </div>
+            </div>
+
+            <div class="work__body">
+              <div class="work__head">
+                <div>
+                  <h3 class="work__title">Lumina</h3>
+                  <p class="work__subtitle">Mobile Banking untuk Generasi Milenial</p>
+                </div>
+                <span class="work__year">2025</span>
+              </div>
+
+              <ul class="tags" aria-label="Tag proyek">
+                <li class="tag">Mobile App</li>
+                <li class="tag">Fintech</li>
+                <li class="tag">Design System</li>
+              </ul>
+
+              <dl class="work__facts">
+                <div>
+                  <dt>Peran</dt>
+                  <dd>Lead UI/UX Designer</dd>
+                </div>
+                <div>
+                  <dt>Klien</dt>
+                  <dd>Lunacy Digital</dd>
+                </div>
+                <div>
+                  <dt>Durasi</dt>
+                  <dd>5 bulan</dd>
+                </div>
+              </dl>
+
+              <div class="work__detail" id="detail-lumina">
+                <div class="work__block">
+                  <h4>Problem statement</h4>
+                  <p>Riset pasar menunjukkan 42% pengguna mobile banking usia 20–30 tahun bingung
+                    mencari menu transfer, dan 3 dari 5 transaksi terhenti sebelum selesai —
+                    karena informasi yang ditampilkan terlalu banyak dan tidak terstruktur.</p>
+                </div>
+                <div class="work__block">
+                  <h4>Solusi</h4>
+                  <p>Saya merancang ulang alur transfer dengan pendekatan <em>progressive disclosure</em>:
+                    informasi dibuka bertahap sesuai konteks pengguna. Saya juga membangun
+                    <strong>design system</strong> dengan 48 komponen reusable, dan melakukan
+                    <strong>5 putaran usability testing</strong> dengan 12 partisipan untuk memvalidasi
+                    setiap iterasi.
+                  </p>
+                </div>
+              </div>
+
+              <div class="work__metrics">
+                <div><strong>1j15d</strong><span>Waktu transaksi (dari 2j10d)</span></div>
+                <div><strong>3.8→4.5</strong><span>Rating App Store dalam 2 bulan</span></div>
+                <div><strong>4</strong><span>Produk lain memakai design system</span></div>
+              </div>
+
+              <button class="work__toggle" data-target="detail-lumina" aria-expanded="false"
+                aria-controls="detail-lumina" id="toggle-lumina">
+                <span class="work__toggle-text">Lihat detail case study</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- ===== PROJECT 2 ===== -->
+          <div class="works__pair">
+            <article class="work reveal" data-reveal data-delay="1">
+              <div class="work__visual work__visual--kirana">
+                <div class="dash">
+                  <div class="dash__top"><span></span><span></span><span></span><i></i></div>
+                  <div class="dash__stats">
+                    <div class="dash__stat"><small>Omzet</small><strong>Rp 248 jt</strong></div>
+                    <div class="dash__stat"><small>Pesanan</small><strong>1.842</strong></div>
+                    <div class="dash__stat"><small>Konversi</small><strong>6,4%</strong></div>
+                  </div>
+                  <div class="dash__chart">
+                    <span style="--h:34%"></span><span style="--h:52%"></span><span style="--h:41%"></span>
+                    <span style="--h:66%"></span><span style="--h:58%"></span><span style="--h:80%"></span>
+                    <span style="--h:71%"></span><span style="--h:94%"></span>
+                  </div>
+                  <div class="dash__cards"><i></i><i></i><i></i></div>
+                </div>
+                <div class="work__impact"><strong>-60%</strong><span>waktu admin</span></div>
+              </div>
+
+              <div class="work__body">
+                <div class="work__head">
+                  <div>
+                    <h3 class="work__title">Kirana</h3>
+                    <p class="work__subtitle">Dashboard Penjualan untuk UMKM</p>
+                  </div>
+                  <span class="work__year">2024</span>
+                </div>
+                <ul class="tags" aria-label="Tag proyek">
+                  <li class="tag">Web App</li>
+                  <li class="tag">B2B SaaS</li>
+                  <li class="tag">Dashboard</li>
+                </ul>
+                <dl class="work__facts">
+                  <div>
+                    <dt>Peran</dt>
+                    <dd>UI/UX Designer</dd>
+                  </div>
+                  <div>
+                    <dt>Klien</dt>
+                    <dd>Kirana Commerce</dd>
+                  </div>
+                  <div>
+                    <dt>Durasi</dt>
+                    <dd>4 bulan</dd>
+                  </div>
+                </dl>
+                <div class="work__detail" id="detail-kirana">
+                  <div class="work__block">
+                    <h4>Problem statement</h4>
+                    <p>Penjual UMKM harus memantau stok, pesanan, dan keuangan dari lima aplikasi
+                      berbeda. Rata-rata mereka menghabiskan <strong>4 jam per hari</strong> hanya
+                      untuk administrative tasks, sehingga waktu untuk mengembangkan produk jadi sangat terbatas.</p>
+                  </div>
+                  <div class="work__block">
+                    <h4>Solusi</h4>
+                    <p>Saya merancang satu dashboard terpadu yang menyatukan lima alur kerja dalam
+                      satu tampilan. Saya melakukan <em>contextual inquiry</em> dengan 8 pemilik toko,
+                      memetakan <em>user journey</em> mereka, lalu menyusun prioritas fitur berdasarkan
+                      matriks impact-effort.</p>
+                  </div>
+                </div>
+                <div class="work__metrics">
+                  <div><strong>1.200+</strong><span>UMKM aktif dalam 6 bulan</span></div>
+                  <div><strong>+25%</strong><span>Conversion rate rata-rata</span></div>
+                </div>
+                <button class="work__toggle" data-target="detail-kirana" aria-expanded="false"
+                  aria-controls="detail-kirana" id="toggle-kirana">
+                  <span class="work__toggle-text">Lihat detail case study</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <!-- ===== PROJECT 3 ===== -->
+            <article class="work reveal" data-reveal data-delay="2">
+              <div class="work__visual work__visual--sehatku">
+                <div class="mood">
+                  <div class="mood__head"><small>Check-in hari ini</small><strong>Bagaimana perasaanmu?</strong></div>
+                  <div class="mood__faces">
+                    <span class="mf mf--1"></span><span class="mf mf--2 is-on"></span>
+                    <span class="mf mf--3"></span><span class="mf mf--4"></span><span class="mf mf--5"></span>
+                  </div>
+                  <div class="mood__note">"Rasanya lebih ringan setelah nulis di sini."</div>
+                  <div class="mood__cta">Mulai journaling</div>
+                </div>
+                <div class="work__impact"><strong>3,2x</strong><span>engagement</span></div>
+              </div>
+
+              <div class="work__body">
+                <div class="work__head">
+                  <div>
+                    <h3 class="work__title">SehatKu</h3>
+                    <p class="work__subtitle">Care Companion untuk Remaja</p>
+                  </div>
+                  <span class="work__year">2024</span>
+                </div>
+                <ul class="tags" aria-label="Tag proyek">
+                  <li class="tag">UX Research</li>
+                  <li class="tag">HealthTech</li>
+                  <li class="tag">Mobile App</li>
+                </ul>
+                <dl class="work__facts">
+                  <div>
+                    <dt>Peran</dt>
+                    <dd>UX Researcher &amp; UI Designer</dd>
+                  </div>
+                  <div>
+                    <dt>Klien</dt>
+                    <dd>SehatKu Foundation</dd>
+                  </div>
+                  <div>
+                    <dt>Durasi</dt>
+                    <dd>6 bulan</dd>
+                  </div>
+                </dl>
+                <div class="work__detail" id="detail-sehatku">
+                  <div class="work__block">
+                    <h4>Problem statement</h4>
+                    <p>Remaja yang mencari bantuan kesehatan mental sering ragu memulai —
+                      aplikasi yang ada terlalu banyak menu, bahasanya terlalu formal, dan tidak ada
+                      yang terasa "aman". Hasil riset awal: <strong>73%</strong> peserta merasa
+                      aplikasi kesehatan mental yang ada terlalu kaku.</p>
+                  </div>
+                  <div class="work__block">
+                    <h4>Solusi</h4>
+                    <p>Saya menjalankan riset kualitatif dengan <strong>20 remaja (16–22 tahun)</strong>
+                      menggunakan <em>affinity mapping</em> dan interview 1-on-1. Dari temuan itu saya
+                      merancang pengalaman yang terasa seperti <strong>teman ngobrol</strong>: alur
+                      check-in di bawah 2 menit, dan fitur journaling yang private by default.</p>
+                  </div>
+                </div>
+                <div class="work__metrics">
+                  <div><strong>8.000+</strong><span>Remaja terpakai di Indonesia</span></div>
+                  <div><strong>4,7/5</strong><span>Skor kepuasan pengguna</span></div>
+                </div>
+                <button class="work__toggle" data-target="detail-sehatku" aria-expanded="false"
+                  aria-controls="detail-sehatku" id="toggle-sehatku">
+                  <span class="work__toggle-text">Lihat detail case study</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ SKILLS ═══════════ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="eyebrow">03 — Skills &amp; Tools</span>
+          <h2 class="section__title">Keahlian &amp; <span class="grad">tools</span></h2>
+          <p class="section__lead">Hal yang saya kuasai, dan hal yang saya buka setiap hari untuk belajar.</p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill reveal" data-reveal>
+            <span class="skill__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7" rx="2" />
+                <rect x="14" y="3" width="7" height="7" rx="2" />
+                <rect x="3" y="14" width="7" height="7" rx="2" />
+                <rect x="14" y="14" width="7" height="7" rx="2" />
+              </svg>
+            </span>
+            <h3>UI Design</h3>
+            <p>Merancang antarmuka yang bersih, konsisten, dan enak dilihat.</p>
+          </article>
+
+          <article class="skill reveal" data-reveal data-delay="1">
+            <span class="skill__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7" />
+                <path d="M20 20l-3.6-3.6" />
+              </svg>
+            </span>
+            <h3>UX Research</h3>
+            <p>User interview, usability testing, affinity mapping, persona.</p>
+          </article>
+
+          <article class="skill reveal" data-reveal data-delay="2">
+            <span class="skill__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 19V9l7-5 7 5v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1Z" />
+                <path d="M9.5 20v-5h5v5" />
+              </svg>
+            </span>
+            <h3>Prototyping</h3>
+            <p>Prototipe interaktif high-fidelity untuk validasi cepat.</p>
+          </article>
+
+          <article class="skill reveal" data-reveal data-delay="3">
+            <span class="skill__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="6" rx="2" />
+                <rect x="3" y="14" width="18" height="6" rx="2" />
+                <path d="M7 7h.01M7 17h.01" />
+              </svg>
+            </span>
+            <h3>Design System</h3>
+            <p>Membangun komponen reusable yang konsisten dan scalable.</p>
+          </article>
+
+          <article class="skill reveal" data-reveal data-delay="4">
+            <span class="skill__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3 3 8l9 5 9-5-9-5Z" />
+                <path d="M3 13l9 5 9-5M3 18l9 5 9-5" />
+              </svg>
+            </span>
+            <h3>Wireframing</h3>
+            <p>Ide kasar menjadi struktur low-fidelity yang logis.</p>
+          </article>
+
+          <article class="skill reveal" data-reveal data-delay="5">
+            <span class="skill__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-7-4.4-7-10a7 7 0 1 1 14 0c0 5.6-7 10-7 10Z" />
+                <circle cx="12" cy="11" r="2.6" />
+              </svg>
+            </span>
+            <h3>Usability Testing</h3>
+            <p>Menguji dengan pengguna nyata, lalu iterate berdasarkan data.</p>
+          </article>
+        </div>
+
+        <!-- Tools -->
+        <div class="tools reveal" data-reveal>
+          <div class="tool-group">
+            <h3 class="tool-group__title">Design</h3>
+            <ul class="pills">
+              <li class="pill">Figma</li>
+              <li class="pill">Adobe XD</li>
+              <li class="pill">Sketch</li>
+              <li class="pill">Illustrator</li>
+              <li class="pill">Photoshop</li>
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h3 class="tool-group__title">Prototyping</h3>
+            <ul class="pills">
+              <li class="pill">Figma Prototype</li>
+              <li class="pill">Principle</li>
+              <li class="pill">InVision</li>
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h3 class="tool-group__title">Research</h3>
+            <ul class="pills">
+              <li class="pill">Maze</li>
+              <li class="pill">UserTesting</li>
+              <li class="pill">Google Forms</li>
+              <li class="pill">FigJam</li>
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h3 class="tool-group__title">Workflow</h3>
+            <ul class="pills">
+              <li class="pill">Jira</li>
+              <li class="pill">Notion</li>
+              <li class="pill">Trello</li>
+              <li class="pill">Slack</li>
+            </ul>
           </div>
         </div>
 
-        <div class="work__body">
-          <div class="work__head">
-            <div>
-              <h3 class="work__title">Lumina</h3>
-              <p class="work__subtitle">Mobile Banking untuk Generasi Milenial</p>
-            </div>
-            <span class="work__year">2025</span>
-          </div>
+        <!-- Soft skills -->
+        <div class="softs">
+          <article class="soft reveal" data-reveal data-delay="1">
+            <h3>Komunikasi</h3>
+            <p>Menjelaskan keputusan desain ke stakeholder non-teknis.</p>
+          </article>
+          <article class="soft reveal" data-reveal data-delay="2">
+            <h3>Problem-solving</h3>
+            <p>Memecah masalah kompleks jadi bagian-bagian kecil.</p>
+          </article>
+          <article class="soft reveal" data-reveal data-delay="3">
+            <h3>Kolaborasi</h3>
+            <p>Thrive dalam tim lintas fungsi: dev, PM, marketing.</p>
+          </article>
+          <article class="soft reveal" data-reveal data-delay="4">
+            <h3>Detail-oriented</h3>
+            <p>Teliti pada spacing, warna, dan micro-interaction.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-          <ul class="tags" aria-label="Tag proyek">
-            <li class="tag">Mobile App</li><li class="tag">Fintech</li><li class="tag">Design System</li>
+    <!-- ═══════════ PROCESS ═══════════ -->
+    <section class="section section--alt" id="process">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="eyebrow">04 — How I Work</span>
+          <h2 class="section__title">Proses yang <span class="grad">sederhana</span></h2>
+        </header>
+        <ol class="process">
+          <li class="step reveal" data-reveal data-delay="1">
+            <span class="step__num">01</span>
+            <h3>Discover</h3>
+            <p>Riset, user interview, dan analisis data untuk memastikan saya memahami
+              masalah yang benar, bukan sekadar mengikuti asumsi.</p>
+          </li>
+          <li class="step reveal" data-reveal data-delay="2">
+            <span class="step__num">02</span>
+            <h3>Define</h3>
+            <p>User flow, wireframe, dan success metrics yang disepakati sebelum satu pixel digambar.</p>
+          </li>
+          <li class="step reveal" data-reveal data-delay="3">
+            <span class="step__num">03</span>
+            <h3>Design</h3>
+            <p>High-fidelity UI, prototype interaktif, dan design system yang siap
+              diimplementasikan developer.</p>
+          </li>
+          <li class="step reveal" data-reveal data-delay="4">
+            <span class="step__num">04</span>
+            <h3>Test &amp; Iterate</h3>
+            <p>Usability testing, perbaikan, lalu handoff dengan dokumentasi yang rapi.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ═══════════ CONTACT ═══════════ -->
+    <section class="section contact" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <header class="section__head section__head--left reveal" data-reveal>
+            <span class="eyebrow">05 — Contact</span>
+            <h2 class="section__title">Mari ter<span class="grad">bekerja</span> sama</h2>
+          </header>
+          <p class="contact__lead reveal" data-reveal data-delay="1">
+            Terima kasih sudah sampai di sini. Kalau kamu sedang membangun produk digital
+            yang butuh desain yang <em>thoughtful</em>, <em>ergonomic</em>, dan benar-benar
+            dipakai dengan senang hati — saya dengan senang hati akan mendengar ceritamu.
+          </p>
+
+          <ul class="socials">
+            <li><a href="https://www.linkedin.com/in/natasyapratama" target="_blank" rel="noopener noreferrer"
+                id="social-linkedin">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95C21.4 8.75 22 11 22 14.1V21h-4v-6.1c0-1.46-.03-3.34-2.03-3.34-2.04 0-2.35 1.59-2.35 3.23V21h-4V9Z" />
+                </svg>
+                <span>LinkedIn</span></a></li>
+            <li><a href="https://dribbble.com/natasyapratama" target="_blank" rel="noopener noreferrer"
+                id="social-dribbble">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9.2" />
+                  <path d="M5 6.5c4.5 3 9.5 3.6 14.6 2M3.2 14.4c4.2-1.1 8.6-.4 12.2 2.6M9 3.3c3.4 3.6 5.4 8.3 5.6 13" />
+                </svg>
+                <span>Dribbble</span></a></li>
+            <li><a href="https://behance.net/natasyapratama" target="_blank" rel="noopener noreferrer"
+                id="social-behance">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M2.5 6.5h5.2c1.9 0 3.1 1 3.1 2.6 0 1.2-.7 2-1.7 2.3 1.3.3 2.2 1.3 2.2 2.7 0 1.9-1.4 3.1-3.6 3.1H2.5V6.5Z" />
+                  <path
+                    d="M13.6 12.6h7.9c-.1-2-1.4-3.4-3.6-3.4-2.3 0-3.7 1.4-3.7 3.6s1.4 3.5 3.7 3.5c1.6 0 2.9-.7 3.4-2" />
+                  <path d="M15.4 6.9h4.4" />
+                </svg>
+                <span>Behance</span></a></li>
+            <li><a href="mailto:hello@natasyaprutama.com" id="social-email">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="3" />
+                  <path d="m3.5 7 8.5 6 8.5-6" />
+                </svg>
+                <span>hello@natasyaprutama.com</span></a></li>
           </ul>
 
-          <dl class="work__facts">
-            <div><dt>Peran</dt><dd>Lead UI/UX Designer</dd></div>
-            <div><dt>Klien</dt><dd>Lunacy Digital</dd></div>
-            <div><dt>Durasi</dt><dd>5 bulan</dd></div>
-          </dl>
-
-          <div class="work__detail" id="detail-lumina">
-            <div class="work__block">
-              <h4>Problem statement</h4>
-              <p>Riset pasar menunjukkan 42% pengguna mobile banking usia 20–30 tahun bingung
-                mencari menu transfer, dan 3 dari 5 transaksi terhenti sebelum selesai —
-                karena informasi yang ditampilkan terlalu banyak dan tidak terstruktur.</p>
-            </div>
-            <div class="work__block">
-              <h4>Solusi</h4>
-              <p>Saya merancang ulang alur transfer dengan pendekatan <em>progressive disclosure</em>:
-                informasi dibuka bertahap sesuai konteks pengguna. Saya juga membangun
-                <strong>design system</strong> dengan 48 komponen reusable, dan melakukan
-                <strong>5 putaran usability testing</strong> dengan 12 partisipan untuk memvalidasi
-                setiap iterasi.</p>
-            </div>
+          <div class="contact__cta-row">
+            <a href="mailto:hello@natasyaprutama.com" class="btn btn--primary" id="ctaBook">
+              Jadwalkan Obrolan
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+            <a href="#" class="btn btn--ghost" id="ctaResume" download>Unduh CV / Resume</a>
           </div>
-
-          <div class="work__metrics">
-            <div><strong>1j15d</strong><span>Waktu transaksi (dari 2j10d)</span></div>
-            <div><strong>3.8→4.5</strong><span>Rating App Store dalam 2 bulan</span></div>
-            <div><strong>4</strong><span>Produk lain memakai design system</span></div>
-          </div>
-
-          <button class="work__toggle" data-target="detail-lumina" aria-expanded="false" aria-controls="detail-lumina" id="toggle-lumina">
-            <span class="work__toggle-text">Lihat detail case study</span>
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
-          </button>
         </div>
-      </article>
 
-      <!-- ===== PROJECT 2 ===== -->
-      <div class="works__pair">
-        <article class="work reveal" data-reveal data-delay="1">
-          <div class="work__visual work__visual--kirana">
-            <div class="dash">
-              <div class="dash__top"><span></span><span></span><span></span><i></i></div>
-              <div class="dash__stats">
-                <div class="dash__stat"><small>Omzet</small><strong>Rp 248 jt</strong></div>
-                <div class="dash__stat"><small>Pesanan</small><strong>1.842</strong></div>
-                <div class="dash__stat"><small>Konversi</small><strong>6,4%</strong></div>
+        <div class="contact__form-wrap reveal" data-reveal data-delay="2">
+          <form class="form" id="contactForm" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label for="name">Nama kamu</label>
+                <input type="text" id="name" name="name" placeholder="Nama lengkap" autocomplete="name" required />
+                <span class="field__err" data-err-for="name"></span>
               </div>
-              <div class="dash__chart">
-                <span style="--h:34%"></span><span style="--h:52%"></span><span style="--h:41%"></span>
-                <span style="--h:66%"></span><span style="--h:58%"></span><span style="--h:80%"></span>
-                <span style="--h:71%"></span><span style="--h:94%"></span>
-              </div>
-              <div class="dash__cards"><i></i><i></i><i></i></div>
-            </div>
-            <div class="work__impact"><strong>-60%</strong><span>waktu admin</span></div>
-          </div>
-
-          <div class="work__body">
-            <div class="work__head">
-              <div>
-                <h3 class="work__title">Kirana</h3>
-                <p class="work__subtitle">Dashboard Penjualan untuk UMKM</p>
-              </div>
-              <span class="work__year">2024</span>
-            </div>
-            <ul class="tags" aria-label="Tag proyek">
-              <li class="tag">Web App</li><li class="tag">B2B SaaS</li><li class="tag">Dashboard</li>
-            </ul>
-            <dl class="work__facts">
-              <div><dt>Peran</dt><dd>UI/UX Designer</dd></div>
-              <div><dt>Klien</dt><dd>Kirana Commerce</dd></div>
-              <div><dt>Durasi</dt><dd>4 bulan</dd></div>
-            </dl>
-            <div class="work__detail" id="detail-kirana">
-              <div class="work__block">
-                <h4>Problem statement</h4>
-                <p>Penjual UMKM harus memantau stok, pesanan, dan keuangan dari lima aplikasi
-                  berbeda. Rata-rata mereka menghabiskan <strong>4 jam per hari</strong> hanya
-                  untuk administrative tasks, sehingga waktu untuk mengembangkan produk jadi sangat terbatas.</p>
-              </div>
-              <div class="work__block">
-                <h4>Solusi</h4>
-                <p>Saya merancang satu dashboard terpadu yang menyatukan lima alur kerja dalam
-                  satu tampilan. Saya melakukan <em>contextual inquiry</em> dengan 8 pemilik toko,
-                  memetakan <em>user journey</em> mereka, lalu menyusun prioritas fitur berdasarkan
-                  matriks impact-effort.</p>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email"
+                  required />
+                <span class="field__err" data-err-for="email"></span>
               </div>
             </div>
-            <div class="work__metrics">
-              <div><strong>1.200+</strong><span>UMKM aktif dalam 6 bulan</span></div>
-              <div><strong>+25%</strong><span>Conversion rate rata-rata</span></div>
+            <div class="field">
+              <label for="subject">Tentang apa ini?</label>
+              <select id="subject" name="subject">
+                <option>Proyek baru</option>
+                <option>Kolaborasi / freelance</option>
+                <option>Pelatihan / mentoring</option>
+                <option>Lowongan posisi</option>
+                <option>Lainnya</option>
+              </select>
             </div>
-            <button class="work__toggle" data-target="detail-kirana" aria-expanded="false" aria-controls="detail-kirana" id="toggle-kirana">
-              <span class="work__toggle-text">Lihat detail case study</span>
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            <div class="field">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="5" placeholder="Ceritakan sedikit tentang proyek kamu…"
+                required></textarea>
+              <span class="field__err" data-err-for="message"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block" id="submitBtn">
+              <span class="btn__label">Kirim Pesan</span>
+              <span class="btn__spinner" aria-hidden="true"></span>
             </button>
-          </div>
-        </article>
-
-        <!-- ===== PROJECT 3 ===== -->
-        <article class="work reveal" data-reveal data-delay="2">
-          <div class="work__visual work__visual--sehatku">
-            <div class="mood">
-              <div class="mood__head"><small>Check-in hari ini</small><strong>Bagaimana perasaanmu?</strong></div>
-              <div class="mood__faces">
-                <span class="mf mf--1"></span><span class="mf mf--2 is-on"></span>
-                <span class="mf mf--3"></span><span class="mf mf--4"></span><span class="mf mf--5"></span>
-              </div>
-              <div class="mood__note">"Rasanya lebih ringan setelah nulis di sini."</div>
-              <div class="mood__cta">Mulai journaling</div>
-            </div>
-            <div class="work__impact"><strong>3,2x</strong><span>engagement</span></div>
-          </div>
-
-          <div class="work__body">
-            <div class="work__head">
-              <div>
-                <h3 class="work__title">SehatKu</h3>
-                <p class="work__subtitle">Care Companion untuk Remaja</p>
-              </div>
-              <span class="work__year">2024</span>
-            </div>
-            <ul class="tags" aria-label="Tag proyek">
-              <li class="tag">UX Research</li><li class="tag">HealthTech</li><li class="tag">Mobile App</li>
-            </ul>
-            <dl class="work__facts">
-              <div><dt>Peran</dt><dd>UX Researcher &amp; UI Designer</dd></div>
-              <div><dt>Klien</dt><dd>SehatKu Foundation</dd></div>
-              <div><dt>Durasi</dt><dd>6 bulan</dd></div>
-            </dl>
-            <div class="work__detail" id="detail-sehatku">
-              <div class="work__block">
-                <h4>Problem statement</h4>
-                <p>Remaja yang mencari bantuan kesehatan mental sering ragu memulai —
-                  aplikasi yang ada terlalu banyak menu, bahasanya terlalu formal, dan tidak ada
-                  yang terasa "aman". Hasil riset awal: <strong>73%</strong> peserta merasa
-                  aplikasi kesehatan mental yang ada terlalu kaku.</p>
-              </div>
-              <div class="work__block">
-                <h4>Solusi</h4>
-                <p>Saya menjalankan riset kualitatif dengan <strong>20 remaja (16–22 tahun)</strong>
-                  menggunakan <em>affinity mapping</em> dan interview 1-on-1. Dari temuan itu saya
-                  merancang pengalaman yang terasa seperti <strong>teman ngobrol</strong>: alur
-                  check-in di bawah 2 menit, dan fitur journaling yang private by default.</p>
-              </div>
-            </div>
-            <div class="work__metrics">
-              <div><strong>8.000+</strong><span>Remaja terpakai di Indonesia</span></div>
-              <div><strong>4,7/5</strong><span>Skor kepuasan pengguna</span></div>
-            </div>
-            <button class="work__toggle" data-target="detail-sehatku" aria-expanded="false" aria-controls="detail-sehatku" id="toggle-sehatku">
-              <span class="work__toggle-text">Lihat detail case study</span>
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
-            </button>
-          </div>
-        </article>
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ═══════════ SKILLS ═══════════ -->
-<section class="section" id="skills">
-  <div class="container">
-    <header class="section__head reveal" data-reveal>
-      <span class="eyebrow">03 — Skills &amp; Tools</span>
-      <h2 class="section__title">Keahlian &amp; <span class="grad">tools</span></h2>
-      <p class="section__lead">Hal yang saya kuasai, dan hal yang saya buka setiap hari untuk belajar.</p>
-    </header>
+  </main>
 
-    <div class="skills-grid">
-      <article class="skill reveal" data-reveal>
-        <span class="skill__ico" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg>
-        </span>
-        <h3>UI Design</h3>
-        <p>Merancang antarmuka yang bersih, konsisten, dan enak dilihat.</p>
-      </article>
-
-      <article class="skill reveal" data-reveal data-delay="1">
-        <span class="skill__ico" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
-        </span>
-        <h3>UX Research</h3>
-        <p>User interview, usability testing, affinity mapping, persona.</p>
-      </article>
-
-      <article class="skill reveal" data-reveal data-delay="2">
-        <span class="skill__ico" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19V9l7-5 7 5v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1Z"/><path d="M9.5 20v-5h5v5"/></svg>
-        </span>
-        <h3>Prototyping</h3>
-        <p>Prototipe interaktif high-fidelity untuk validasi cepat.</p>
-      </article>
-
-      <article class="skill reveal" data-reveal data-delay="3">
-        <span class="skill__ico" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01"/></svg>
-        </span>
-        <h3>Design System</h3>
-        <p>Membangun komponen reusable yang konsisten dan scalable.</p>
-      </article>
-
-      <article class="skill reveal" data-reveal data-delay="4">
-        <span class="skill__ico" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="M3 13l9 5 9-5M3 18l9 5 9-5"/></svg>
-        </span>
-        <h3>Wireframing</h3>
-        <p>Ide kasar menjadi struktur low-fidelity yang logis.</p>
-      </article>
-
-      <article class="skill reveal" data-reveal data-delay="5">
-        <span class="skill__ico" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a7 7 0 1 1 14 0c0 5.6-7 10-7 10Z"/><circle cx="12" cy="11" r="2.6"/></svg>
-        </span>
-        <h3>Usability Testing</h3>
-        <p>Menguji dengan pengguna nyata, lalu iterate berdasarkan data.</p>
-      </article>
-    </div>
-
-    <!-- Tools -->
-    <div class="tools reveal" data-reveal>
-      <div class="tool-group">
-        <h3 class="tool-group__title">Design</h3>
-        <ul class="pills">
-          <li class="pill">Figma</li><li class="pill">Adobe XD</li><li class="pill">Sketch</li>
-          <li class="pill">Illustrator</li><li class="pill">Photoshop</li>
-        </ul>
-      </div>
-      <div class="tool-group">
-        <h3 class="tool-group__title">Prototyping</h3>
-        <ul class="pills">
-          <li class="pill">Figma Prototype</li><li class="pill">Principle</li><li class="pill">InVision</li>
-        </ul>
-      </div>
-      <div class="tool-group">
-        <h3 class="tool-group__title">Research</h3>
-        <ul class="pills">
-          <li class="pill">Maze</li><li class="pill">UserTesting</li><li class="pill">Google Forms</li><li class="pill">FigJam</li>
-        </ul>
-      </div>
-      <div class="tool-group">
-        <h3 class="tool-group__title">Workflow</h3>
-        <ul class="pills">
-          <li class="pill">Jira</li><li class="pill">Notion</li><li class="pill">Trello</li><li class="pill">Slack</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Soft skills -->
-    <div class="softs">
-      <article class="soft reveal" data-reveal data-delay="1">
-        <h3>Komunikasi</h3><p>Menjelaskan keputusan desain ke stakeholder non-teknis.</p>
-      </article>
-      <article class="soft reveal" data-reveal data-delay="2">
-        <h3>Problem-solving</h3><p>Memecah masalah kompleks jadi bagian-bagian kecil.</p>
-      </article>
-      <article class="soft reveal" data-reveal data-delay="3">
-        <h3>Kolaborasi</h3><p>Thrive dalam tim lintas fungsi: dev, PM, marketing.</p>
-      </article>
-      <article class="soft reveal" data-reveal data-delay="4">
-        <h3>Detail-oriented</h3><p>Teliti pada spacing, warna, dan micro-interaction.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════ PROCESS ═══════════ -->
-<section class="section section--alt" id="process">
-  <div class="container">
-    <header class="section__head reveal" data-reveal>
-      <span class="eyebrow">04 — How I Work</span>
-      <h2 class="section__title">Proses yang <span class="grad">sederhana</span></h2>
-    </header>
-    <ol class="process">
-      <li class="step reveal" data-reveal data-delay="1">
-        <span class="step__num">01</span>
-        <h3>Discover</h3>
-        <p>Riset, user interview, dan analisis data untuk memastikan saya memahami
-          masalah yang benar, bukan sekadar mengikuti asumsi.</p>
-      </li>
-      <li class="step reveal" data-reveal data-delay="2">
-        <span class="step__num">02</span>
-        <h3>Define</h3>
-        <p>User flow, wireframe, dan success metrics yang disepakati sebelum satu pixel digambar.</p>
-      </li>
-      <li class="step reveal" data-reveal data-delay="3">
-        <span class="step__num">03</span>
-        <h3>Design</h3>
-        <p>High-fidelity UI, prototype interaktif, dan design system yang siap
-          diimplementasikan developer.</p>
-      </li>
-      <li class="step reveal" data-reveal data-delay="4">
-        <span class="step__num">04</span>
-        <h3>Test &amp; Iterate</h3>
-        <p>Usability testing, perbaikan, lalu handoff dengan dokumentasi yang rapi.</p>
-      </li>
-    </ol>
-  </div>
-</section>
-
-<!-- ═══════════ CONTACT ═══════════ -->
-<section class="section contact" id="contact">
-  <div class="container contact__grid">
-    <div class="contact__info">
-      <header class="section__head section__head--left reveal" data-reveal>
-        <span class="eyebrow">05 — Contact</span>
-        <h2 class="section__title">Mari ter<span class="grad">bekerja</span> sama</h2>
-      </header>
-      <p class="contact__lead reveal" data-reveal data-delay="1">
-        Terima kasih sudah sampai di sini. Kalau kamu sedang membangun produk digital
-        yang butuh desain yang <em>thoughtful</em>, <em>ergonomic</em>, dan benar-benar
-        dipakai dengan senang hati — saya dengan senang hati akan mendengar ceritamu.
-      </p>
-
-      <ul class="socials">
-        <li><a href="https://www.linkedin.com/in/natasyapratama" target="_blank" rel="noopener noreferrer" id="social-linkedin">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95C21.4 8.75 22 11 22 14.1V21h-4v-6.1c0-1.46-.03-3.34-2.03-3.34-2.04 0-2.35 1.59-2.35 3.23V21h-4V9Z"/></svg>
-          <span>LinkedIn</span></a></li>
-        <li><a href="https://dribbble.com/natasyapratama" target="_blank" rel="noopener noreferrer" id="social-dribbble">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M5 6.5c4.5 3 9.5 3.6 14.6 2M3.2 14.4c4.2-1.1 8.6-.4 12.2 2.6M9 3.3c3.4 3.6 5.4 8.3 5.6 13"/></svg>
-          <span>Dribbble</span></a></li>
-        <li><a href="https://behance.net/natasyapratama" target="_blank" rel="noopener noreferrer" id="social-behance">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h5.2c1.9 0 3.1 1 3.1 2.6 0 1.2-.7 2-1.7 2.3 1.3.3 2.2 1.3 2.2 2.7 0 1.9-1.4 3.1-3.6 3.1H2.5V6.5Z"/><path d="M13.6 12.6h7.9c-.1-2-1.4-3.4-3.6-3.4-2.3 0-3.7 1.4-3.7 3.6s1.4 3.5 3.7 3.5c1.6 0 2.9-.7 3.4-2"/><path d="M15.4 6.9h4.4"/></svg>
-          <span>Behance</span></a></li>
-        <li><a href="mailto:hello@natasyaprutama.com" id="social-email">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
-          <span>hello@natasyaprutama.com</span></a></li>
-      </ul>
-
-      <div class="contact__cta-row">
-        <a href="mailto:hello@natasyaprutama.com" class="btn btn--primary" id="ctaBook">
-          Jadwalkan Obrolan
-          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <p class="footer__big">Mari bikin sesuatu yang <span class="grad">bagus</span>.</p>
+        <a href="mailto:hello@natasyaprutama.com" class="footer__mail" id="footerMail">
+          hello@natasyaprutama.com
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 17 17 7M9 7h8v8" />
+          </svg>
         </a>
-        <a href="#" class="btn btn--ghost" id="ctaResume" download>Unduh CV / Resume</a>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span id="year">2026</span> Natasya Putri Pratama. Designed &amp; built with obsession.</p>
+        <nav class="footer__nav" aria-label="Navigasi footer">
+          <a href="#home">Home</a><a href="#works">Works</a><a href="#about">About</a><a href="#skills">Skills</a><a
+            href="#contact">Contact</a>
+        </nav>
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/in/natasyapratama" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn">in</a>
+          <a href="https://dribbble.com/natasyapratama" target="_blank" rel="noopener noreferrer"
+            aria-label="Dribbble">dr</a>
+          <a href="https://behance.net/natasyapratama" target="_blank" rel="noopener noreferrer"
+            aria-label="Behance">be</a>
+        </div>
       </div>
     </div>
+  </footer>
 
-    <div class="contact__form-wrap reveal" data-reveal data-delay="2">
-      <form class="form" id="contactForm" novalidate>
-        <div class="form__row">
-          <div class="field">
-            <label for="name">Nama kamu</label>
-            <input type="text" id="name" name="name" placeholder="Nama lengkap" autocomplete="name" required />
-            <span class="field__err" data-err-for="name"></span>
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email" required />
-            <span class="field__err" data-err-for="email"></span>
-          </div>
-        </div>
-        <div class="field">
-          <label for="subject">Tentang apa ini?</label>
-          <select id="subject" name="subject">
-            <option>Proyek baru</option>
-            <option>Kolaborasi / freelance</option>
-            <option>Pelatihan / mentoring</option>
-            <option>Lowongan posisi</option>
-            <option>Lainnya</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="message">Pesan</label>
-          <textarea id="message" name="message" rows="5" placeholder="Ceritakan sedikit tentang proyek kamu…" required></textarea>
-          <span class="field__err" data-err-for="message"></span>
-        </div>
-        <button type="submit" class="btn btn--primary btn--block" id="submitBtn">
-          <span class="btn__label">Kirim Pesan</span>
-          <span class="btn__spinner" aria-hidden="true"></span>
-        </button>
-        <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
-      </form>
-    </div>
-  </div>
-</section>
+  <button class="to-top" id="toTop" aria-label="Kembali ke atas">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 19V5M6 11l6-6 6 6" />
+    </svg>
+  </button>
 
-</main>
-
-<!-- ═══════════ FOOTER ═══════════ -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer__top">
-      <p class="footer__big">Mari bikin sesuatu yang <span class="grad">bagus</span>.</p>
-      <a href="mailto:hello@natasyaprutama.com" class="footer__mail" id="footerMail">
-        hello@natasyaprutama.com
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
-      </a>
-    </div>
-
-    <div class="footer__bottom">
-      <p>© <span id="year">2026</span> Natasya Putri Pratama. Designed &amp; built with obsession.</p>
-      <nav class="footer__nav" aria-label="Navigasi footer">
-        <a href="#home">Home</a><a href="#works">Works</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
-      </nav>
-      <div class="footer__social">
-        <a href="https://www.linkedin.com/in/natasyapratama" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
-        <a href="https://dribbble.com/natasyapratama" target="_blank" rel="noopener noreferrer" aria-label="Dribbble">dr</a>
-        <a href="https://behance.net/natasyapratama" target="_blank" rel="noopener noreferrer" aria-label="Behance">be</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<button class="to-top" id="toTop" aria-label="Kembali ke atas">
-  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
-</button>
-
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
+
 </html>
