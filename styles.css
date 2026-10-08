@@ -728,26 +728,18 @@ input, textarea, select { font: inherit; color: inherit; }
 /* Mood app mockup */
 .mood {
   position: absolute; inset: 0; margin: auto;
-  width: min(62%, 260px); height: min(88%, 380px);
-  border-radius: 34px; padding: 10px;
+  width: min(62%, 250px); height: min(90%, 380px);
+  border-radius: 34px; padding: 12px;
   background: linear-gradient(160deg, #2a2140, #171126);
   border: 1px solid var(--border-strong);
   box-shadow: var(--shadow-lg);
   animation: uiFloat 7s ease-in-out infinite;
-  display: flex;
-}
-.mood {
-  padding: 10px;
-}
-.mood > * { width: 100%; }
-.mood {
-  flex-direction: column;
+  display: flex; flex-direction: column; justify-content: space-between; gap: 10px;
 }
 .mood__head, .mood__faces, .mood__note, .mood__cta {
-  border-radius: 24px; background: #1d1630; border: 1px solid var(--border);
-  padding: 16px;
+  border-radius: 22px; background: #1d1630;
+  border: 1px solid var(--border); padding: 14px;
 }
-.mood { justify-content: space-between; gap: 10px; }
 .mood__head small { font-size: 0.62rem; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.08em; }
 .mood__head strong { display: block; font-family: var(--font-display); font-size: 0.95rem; margin-top: 4px; }
 .mood__faces { display: flex; justify-content: space-between; align-items: center; }
